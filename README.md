@@ -1,1 +1,3 @@
 # QuickSeries
+
+TestNG framework
