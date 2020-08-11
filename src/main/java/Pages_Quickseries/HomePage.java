@@ -37,6 +37,8 @@ public class HomePage {
         driver.findElement(menuIcon).click();
         Thread.sleep(5000);
 	    {
+	    	
+	    	//Scroll down using slide menu
 	        WebElement element = driver.findElement(slideMenu);
 	        Actions builder = new Actions(driver);
 	        builder.moveToElement(element).clickAndHold().perform();
@@ -59,27 +61,29 @@ public class HomePage {
     	
     	//Click on ContactUs from the Menu list
     driver.findElement(contactUs).click();
+    //Verify the elements in a page(Elements should be >0)
     {
+    	
     	List<WebElement> elements = driver.findElements(By.cssSelector(".no-margin-top"));
         assert(elements.size() > 0);
       }
     }
     
-    // Verify if ContactUs page is displayed
+    // Retrieve  ContactUs text 
     public String validatecontactus(){
 
      return    driver.findElement(validatecontactus).getText();
 
     }
     
-    //Verify if FristName field is available in the form
+    //Retrieve  firstname label from the form
     public String validatefirstnamelabel(){
 
         return    driver.findElement(validatefirstnamelabel).getText();
 
        }
     
-    //Submit button
+    //Retrive Submit button text
     public List<WebElement> validatesubmitbutton(){
 
         return    driver.findElements(submitButton);
@@ -91,7 +95,7 @@ public class HomePage {
         driver.findElement(submitButton).click();
     }
     
-    //Validate the error message
+    //Retrieve  error message
     public String validateError(){
 
         return    driver.findElement(validateError).getText();

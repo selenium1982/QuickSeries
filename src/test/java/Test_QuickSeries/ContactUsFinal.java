@@ -66,7 +66,7 @@ public class ContactUsFinal {
     driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
     driver.manage().window().maximize();
    
-    // Verify if QuickSeriesis home is displayed
+    // Verify title of the page
     
     String expectedTitle = "QuickSeries | Reliable Content. Innovative Delivery.";
     String actualTitle = driver.getTitle();
@@ -76,7 +76,7 @@ public class ContactUsFinal {
     }
     
 	
-    //Click on ContactUs from menu and verify if ContactUs page is displayed successfully
+   //UserStory1: Verify that the Contact Us page is displayed by adding a few validations
         
     @Test ()
     public void UserStory1() throws InterruptedException {
@@ -97,7 +97,8 @@ public class ContactUsFinal {
 	    Assert.assertEquals(Verifyfirstname,"First Name *");
 	    
 	    {
-	    	
+	    
+	    	//Verify submit button
 	    	
 	      List<WebElement> elements = objPage.validatesubmitbutton();
 	      assert(elements.size() > 0);
@@ -105,6 +106,11 @@ public class ContactUsFinal {
 	
 	
     }
+    
+	/*
+	 * UserStory2: Verify that the user is unable to submit the form and that
+	 * 			    validation errors are visible to the user
+	 */
     
     @Test ()
         public void Userstory2() throws InterruptedException {
