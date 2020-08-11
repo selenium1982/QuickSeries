@@ -21,8 +21,7 @@ import Pages_Quickseries.HomePage;
 
 public class ContactUsFinal {
 
-	
-    	    
+	   	    
 	WebDriver driver ; 
 	
 	HomePage objPage;
@@ -67,7 +66,7 @@ public class ContactUsFinal {
     driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
     driver.manage().window().maximize();
    
-    // Verify if QuickSeriesis displayed
+    // Verify if QuickSeriesis home is displayed
     
     String expectedTitle = "QuickSeries | Reliable Content. Innovative Delivery.";
     String actualTitle = driver.getTitle();
@@ -81,38 +80,40 @@ public class ContactUsFinal {
         
     @Test ()
     public void UserStory1() throws InterruptedException {
-    	
-    
-    			
+    	       			
 		objPage=new HomePage(driver);
-		objPage.menuIcon();	   
-	    objPage.contactUs();	   
+		//Click on Menu Icon
+		objPage.menuIcon();	  
+		
+		//Click on ContactUs from Menu list
+	    objPage.contactUs();	 
+	    
+	    //Verify if Contact Us page is displayed 
 	    String Verifycontactus = objPage.validatecontactus();
 	    Assert.assertEquals(Verifycontactus,"Contact us");
+	    
+	    //Verify if firstname field present in the form
 	    String Verifyfirstname = objPage.validatefirstnamelabel();
 	    Assert.assertEquals(Verifyfirstname,"First Name *");
 	    
 	    {
+	    	
+	    	
 	      List<WebElement> elements = objPage.validatesubmitbutton();
 	      assert(elements.size() > 0);
 	    }
 	
-		/*
-		 * objPage.ClicksubmitButton(); Thread.sleep(5000);
-		 * 
-		 * String VerifyError = objPage.validateError();
-		 * Assert.assertEquals(VerifyError,
-		 * "One or more fields have an error. Please check and try again.");
-		 */
-		
+	
     }
     
     @Test ()
         public void Userstory2() throws InterruptedException {
     	
+    	//Click on Submit button
     	objPage.ClicksubmitButton();
 	    Thread.sleep(5000);
 	  
+	    //Validate the error message in the form
 	    String VerifyError = objPage.validateError();
 	    Assert.assertEquals(VerifyError, "One or more fields have an error. Please check and try again.");
 	  
@@ -120,6 +121,7 @@ public class ContactUsFinal {
     }
    
     @AfterTest
+    //Close application
     public void closeapplication(){
     driver.close();
     	

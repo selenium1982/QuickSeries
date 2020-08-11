@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-11T14:32:07 EDT" name="Suite" finished-at="2020-08-11T14:33:12 EDT" duration-ms="64584">
+  <suite started-at="2020-08-11T16:01:17 EDT" name="Suite" finished-at="2020-08-11T16:02:20 EDT" duration-ms="62555">
     <groups>
     </groups>
-    <test started-at="2020-08-11T14:32:07 EDT" name="NewTest" finished-at="2020-08-11T14:33:12 EDT" duration-ms="64584">
+    <test started-at="2020-08-11T16:01:17 EDT" name="NewTest" finished-at="2020-08-11T16:02:20 EDT" duration-ms="62555">
       <class name="Test_QuickSeries.ContactUsFinal">
-        <test-method is-config="true" signature="LaunchQuickseries()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T14:32:07 EDT" name="LaunchQuickseries" finished-at="2020-08-11T14:32:37 EDT" duration-ms="29844" status="PASS">
+        <test-method is-config="true" signature="LaunchQuickseries()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T16:01:17 EDT" name="LaunchQuickseries" finished-at="2020-08-11T16:01:41 EDT" duration-ms="23437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchQuickseries -->
-        <test-method signature="UserStory1()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T14:32:37 EDT" name="UserStory1" finished-at="2020-08-11T14:33:03 EDT" duration-ms="25869" status="PASS">
+        <test-method signature="UserStory1()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T16:01:41 EDT" name="UserStory1" finished-at="2020-08-11T16:02:12 EDT" duration-ms="30987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserStory1 -->
-        <test-method signature="Userstory2()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T14:33:03 EDT" name="Userstory2" finished-at="2020-08-11T14:33:10 EDT" duration-ms="6204" status="PASS">
+        <test-method signature="Userstory2()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T16:02:12 EDT" name="Userstory2" finished-at="2020-08-11T16:02:19 EDT" duration-ms="6654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Userstory2 -->
-        <test-method is-config="true" signature="closeapplication()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T14:33:10 EDT" name="closeapplication" finished-at="2020-08-11T14:33:12 EDT" duration-ms="2446" status="PASS">
+        <test-method is-config="true" signature="closeapplication()[pri:0, instance:Test_QuickSeries.ContactUsFinal@27ae2fd0]" started-at="2020-08-11T16:02:19 EDT" name="closeapplication" finished-at="2020-08-11T16:02:20 EDT" duration-ms="1291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapplication -->

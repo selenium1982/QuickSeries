@@ -29,10 +29,11 @@ public class HomePage {
 
     }
 
-    //Set user name in textbox
+    
 
     public void menuIcon() throws InterruptedException{
 
+    	//Click on Menu Icon from the left 
         driver.findElement(menuIcon).click();
         Thread.sleep(5000);
 	    {
@@ -55,36 +56,42 @@ public class HomePage {
 
     }
     public void contactUs() {
+    	
+    	//Click on ContactUs from the Menu list
     driver.findElement(contactUs).click();
     {
-    	//System.out.println(driver.findElements(By.cssSelector(".no-margin-top")));
-        List<WebElement> elements = driver.findElements(By.cssSelector(".no-margin-top"));
+    	List<WebElement> elements = driver.findElements(By.cssSelector(".no-margin-top"));
         assert(elements.size() > 0);
       }
     }
     
-
-    //Get the title of Login Page
-    
-
+    // Verify if ContactUs page is displayed
     public String validatecontactus(){
 
      return    driver.findElement(validatecontactus).getText();
 
     }
+    
+    //Verify if FristName field is available in the form
     public String validatefirstnamelabel(){
 
         return    driver.findElement(validatefirstnamelabel).getText();
 
        }
+    
+    //Submit button
     public List<WebElement> validatesubmitbutton(){
 
         return    driver.findElements(submitButton);
 
        }
+    
+    //Click on Submit button
     public void ClicksubmitButton() {
         driver.findElement(submitButton).click();
     }
+    
+    //Validate the error message
     public String validateError(){
 
         return    driver.findElement(validateError).getText();
